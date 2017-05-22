@@ -624,3 +624,28 @@ img{
 		right: 20px;
 		top: 14px;
 	}
+
+.footer-top{
+  padding: 20px 30px;
+  border-top: 1px solid #E1E0E0;
+}
+
+.footer-top::after{
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.footer-top__prev{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #818181;
+    float: left;
+  }
+
+.footer-top__next{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #818181;
+    float: right;
+  }

@@ -1,0 +1,20 @@
+.footer-top{
+  padding: 20px 30px;
+  border-top: 1px solid $borderColor;
+  
+  @mixin clearfix;
+
+  &__prev{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: $darkGray;
+    float: left;
+  }
+
+  &__next{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: $darkGray;
+    float: right;
+  }
+}
