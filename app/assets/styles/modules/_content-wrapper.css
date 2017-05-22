@@ -1,0 +1,12 @@
+.content-wrapper{
+	max-width: 1026px;
+	margin-right: auto;
+	margin-left: auto;
+
+	&__border{
+		@mixin atSmall{
+			border-left: 1px solid $borderColor;
+			border-right: 1px solid $borderColor;
+		}
+	}
+}

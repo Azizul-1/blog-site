@@ -1,0 +1,27 @@
+.aside-title{
+	margin-top: 0;
+	padding: 15px 15px;
+	color: $titleColor;
+	background-color: $asideTitleBgColor;
+
+	&__left-border{
+		border-left: 5px solid #58C93A;
+	}
+
+	&__input{
+		height: 50px;
+		border: 1px solid $borderColor;
+		width: 100%;
+		border-right: 0;
+
+		&::placeholder{
+			color: $placeholderColor;
+		}
+
+		&[type = "text"], &[type = "email"]{
+			padding: 0 12px;
+			font-size: 12px;
+		}
+	}
+
+}
