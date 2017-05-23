@@ -1,0 +1,40 @@
+.social-icons{
+  text-align: center;
+
+  &__facebook:hover{
+    background-color: #516FAD;
+  }
+
+  &__twitter:hover{
+    background-color: #55acee;
+  }
+
+  &__instagram:hover{
+    background-color: #e95950;
+  }
+
+  &__youtube:hover{
+    background-color: #bb0000;
+  }
+
+  &__icon{
+    background-color: #E5E5E5;
+    display: inline-block;
+    margin: 10px 3px;
+    width: 52px;
+    height: 52px;
+    position: relative;
+
+    @mixin atSmall{
+      margin: 15px 5px;
+    }
+
+    .icon{
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
