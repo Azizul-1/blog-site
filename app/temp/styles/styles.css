@@ -732,3 +732,27 @@ img{
     font-size: .8125rem;
     color: #a6a6a6;
   }
+
+/*Do not edit modules/_sprite directly as it is generated automatically by Gulp.Instead edit gulp/templates/sprite*/
+
+.icon{
+    basckground-image: url("/assets/images/sprites/sprite-37546284.svg");
+  }
+
+.icon--facebook{
+    width: 21.23px;
+    height: 42.01px;
+    background-position: 59.675002881180134% 0;
+  }
+
+.icon--twitter{
+    width: 51.78px;
+    height: 42.06px;
+    background-position: 0 0;
+  }
+
+.icon--youtube{
+    width: 34.75px;
+    height: 42px;
+    background-position: 99.67235494880548% 0;
+  }
