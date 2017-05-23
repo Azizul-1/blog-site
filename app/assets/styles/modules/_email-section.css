@@ -4,6 +4,10 @@
 	&__icon{
 		position: absolute;
 		right: 20px;
-		top: 14px;
+		top: 9px;
+
+    @mixin atSmall{
+      top: 14px;
+    }
 	}
 }
