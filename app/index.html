@@ -12,77 +12,90 @@
 </head>
 <body>
 	<header class="site-header">
-		<h1>Blogin</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Journal</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="content-wrapper content-wrapper__border">
-		<div class="row">
-			<div class="row__medium-8">
-				<section class="page-section">
-					<picture>
-					  <source srcset="assets/images/blog-template--large.jpg" media="(min-width: 1024px)">
-					  <source srcset="assets/images/blog-templet--small.jpg" media="(min-width: 800px)">
-					  <img src="assets/images/blog-templet--smaller.jpg" alt="Lorem ipsum">
-					</picture>
-					<article class="article-wrapper">
-						<h2 class="article-wrapper__title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
-						<p class="article-wrapper__paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-						<p class="article-wrapper__paragraph article-wrapper__paragraph--no-b-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-						<a href="#" class="article-wrapper__btn">Continue Reading</a>
-					</article>
-				</section>
-
-				<section class="page-section page-section--no-t-padding">
-					<picture>
-					  <source srcset="assets/images/blog-templet2--large.jpg" media="(min-width: 1024px)">
-					  <source srcset="assets/images/blog-templet2--small.jpg" media="(min-width: 800px)">
-					  <img src="assets/images/blog-templet2--smaller.jpg" alt="Lorem ipsum">
-					</picture>
-					<article class="article-wrapper">
-						<h2 class="article-wrapper__title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
-						<p class="article-wrapper__paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-						<p class="article-wrapper__paragraph article-wrapper__paragraph--no-b-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-						<a href="#" class="article-wrapper__btn">Continue Reading</a>
-					</article>
-				</section>
+		<div class="content-wrapper">
+			<div class="site-header__logo">
+				<h1 class="site-header__logo__title">Blogin</h1>
 			</div>
-			<div class="row__medium-4">
-				<aside class="page-section">
-					<h4 class="aside-title aside-title__left-border">ABOUT BLOGIN.</h4>
-					<div class="article-wrapper article-wrapper--less-padding">
-						<p class="article-wrapper__paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<p class="article-wrapper__paragraph article-wrapper__paragraph--no-b-margin">Excepteur sint occaecat sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</aside>
-
-				<aside class="page-section page-section--no-t-padding">
-					<h4 class="aside-title aside-title__left-border">SEARCH.</h4>
-					<input type="text" class="aside-title__input" placeholder="What are you looking for?">
-				</aside>
-
-				<aside class="page-section page-section--no-t-padding">
-					<h4 class="aside-title aside-title__left-border">STAY TUNED.</h4>
-					<div class="email-section">
-						<input type="email" class="aside-title__input" placeholder="Your Email">
-						<a href="#"><img src="assets/images/icons/search-icon.png" class="email-section__icon" alt="Search icon"></a>
-					</div>
-					
-				</aside>
+			<div class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
 			</div>
-		</div>	
+			<div class="site-header__menu-content">
+				<nav class="primary-nav primary-nav--pull-right">
+					<ul>
+						<li><a href="#">Journal</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
 
-		<section class="footer-top">
-			<a class="footer-top__prev">&#8592; PREVIOUS</a>
-			<a class="footer-top__next">NEXT &#8594;</a>
-		</section>
+			</div>
+		</header>
+	
+	<div class="content-wrapper--top-border">
+		<div class="content-wrapper content-wrapper__border">
+			<div class="row row--gutters">
+				<div class="row__medium-8">
+					<section class="page-section">
+						<picture>
+							<source srcset="assets/images/blog-template--large.jpg" media="(min-width: 1024px)">
+							<source srcset="assets/images/blog-templet--small.jpg" media="(min-width: 800px)">
+							<img src="assets/images/blog-templet--smaller.jpg" style="width: 100%;" alt="Lorem ipsum">
+						</picture>
+						<article class="article-wrapper">
+							<h2 class="article-wrapper__title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+							<p class="article-wrapper__paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							<p class="article-wrapper__paragraph article-wrapper__paragraph--no-b-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+							<a href="#" class="article-wrapper__btn">Continue Reading</a>
+						</article>
+					</section>
+
+					<section class="page-section page-section--no-t-padding">
+						<picture>
+							<source srcset="assets/images/blog-templet2--large.jpg" media="(min-width: 1024px)">
+							<source srcset="assets/images/blog-templet2--small.jpg" media="(min-width: 800px)">
+							<img src="assets/images/blog-templet2--smaller.jpg" style="width: 100%;" alt="Lorem ipsum">
+						</picture>
+						<article class="article-wrapper">
+							<h2 class="article-wrapper__title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+							<p class="article-wrapper__paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							<p class="article-wrapper__paragraph article-wrapper__paragraph--no-b-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+							<a href="#" class="article-wrapper__btn">Continue Reading</a>
+						</article>
+					</section>
+				</div>
+				<div class="row__medium-4">
+					<aside class="page-section">
+						<h4 class="aside-title aside-title__left-border">ABOUT BLOGIN.</h4>
+						<div class="article-wrapper article-wrapper--less-padding">
+							<p class="article-wrapper__paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<p class="article-wrapper__paragraph article-wrapper__paragraph--no-b-margin">Excepteur sint occaecat sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</aside>
+
+					<aside class="page-section page-section--no-t-padding">
+						<h4 class="aside-title aside-title__left-border">SEARCH.</h4>
+						<input type="text" class="aside-title__input" placeholder="What are you looking for?">
+					</aside>
+
+					<aside class="page-section page-section--no-t-padding">
+						<h4 class="aside-title aside-title__left-border">STAY TUNED.</h4>
+						<div class="email-section">
+							<input type="email" class="aside-title__input" placeholder="Your Email">
+							<a href="#"><img src="assets/images/icons/search-icon.png" class="email-section__icon" alt="Search icon"></a>
+			      </div>
+
+					</aside>
+				</div>
+			</div>	
+
+			<section class="footer-top">
+				<a href="#" class="footer-top__prev">&#8592; PREVIOUS</a>
+				<a href="#" class="footer-top__next">NEXT &#8594;</a>
+			</section>
+		</div>
 	</div>
+	
 	
 	<footer class="site-footer">
 		<hr>
@@ -97,5 +110,7 @@
 			</section>
 		</div>
 	</footer>
+
+	<script src="/temp/scripts/App.js"></script>
 </body>
 </html>

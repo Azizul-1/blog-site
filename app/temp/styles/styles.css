@@ -469,6 +469,15 @@ img{
 	margin-left: auto;
 }
 
+@media (min-width: 800px){
+
+.content-wrapper--top-border{
+      border-top: 5px solid #1E1E1E;
+      margin-top: -5px
+    
+  }
+	}
+
 @media (min-width: 530px){
 
 .content-wrapper__border{
@@ -477,14 +486,14 @@ img{
 	}
 	}
 
-@media (min-width: 800px){
-		.row::after{
+.row::after{
 		content: "";
 		clear: both;
 		display: table;
 	}
 
-		.row--gutters > div{
+@media (min-width: 800px){
+	.row--gutters > div{
 			padding-right: 80px;
 		}
 
@@ -679,6 +688,7 @@ img{
     font-weight: bold;
     color: #818181;
     float: left;
+    text-decoration: none;
   }
 
 @media (min-width: 530px){
@@ -692,6 +702,7 @@ img{
     font-weight: bold;
     color: #818181;
     float: right;
+    text-decoration: none;
   }
 
 @media (min-width: 530px){
@@ -768,20 +779,62 @@ img{
 }
 
 .social-icons__facebook:hover{
-    background-color: #516FAD;
+    rule: properties;
   }
+
+.social-icons__facebook:hover:hover, .social-icons__facebook:hover.hover_effect{
+      background-color: #516FAD;
+    }
 
 .social-icons__twitter:hover{
-    background-color: #55acee;
+    rule: properties;
   }
+
+.social-icons__twitter:hover:hover, .social-icons__twitter:hover.hover_effect{
+      background-color: #55acee;
+    }
 
 .social-icons__instagram:hover{
-    background-color: #e95950;
+    rule: properties;
   }
 
-.social-icons__youtube:hover{
-    background-color: #bb0000;
+.social-icons__instagram:hover:hover, .social-icons__instagram:hover.hover_effect{
+      background-color: #e95950;
+    }
+
+.social-icons__instagram:hover{
+    rule: properties;
   }
+
+.social-icons__instagram:hover:hover, .social-icons__instagram:hover.hover_effect{
+      background-color: #e95950;
+    }
+
+.social-icons__youtube:hover{
+    rule: properties;
+  }
+
+.social-icons__youtube:hover:hover, .social-icons__youtube:hover.hover_effect{
+      background-color: #bb0000;
+    }
+
+@media (min-width: 800px){
+    .social-icons__facebook:hover{
+      background-color: #516FAD;
+    }
+
+    .social-icons__twitter:hover{
+      background-color: #55acee;
+    }
+
+    .social-icons__instagram:hover{
+      background-color: #e95950;
+    }
+
+    .social-icons__youtube:hover{
+      background-color: #bb0000;
+    }
+	}
 
 .social-icons__icon{
     background-color: #E5E5E5;
@@ -807,3 +860,203 @@ img{
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
     }
+
+.site-header{
+  background-color: #292929;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.site-header--is-expanded{
+    background-color: #443939;
+  }
+
+.site-header::after{
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.site-header__menu-content{
+    display: none;
+  }
+
+@media (min-width: 800px){
+
+.site-header__menu-content{
+      display: block
+  }
+	}
+
+.site-header__menu-content--is-visible{
+      display: block;
+    }
+
+.site-header__menu-icon{
+    width: 25px;
+    height: 23px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+
+.site-header__menu-icon::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    }
+
+.site-header__menu-icon__middle{
+      position: absolute;
+      top: 10px;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+      -webkit-transform-origin: 0 50%;
+              transform-origin: 0 50%;
+    }
+
+.site-header__menu-icon::after{
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    }
+
+@media (min-width: 800px){
+
+.site-header__menu-icon{
+      display: none
+  }
+	}
+
+.site-header__menu-icon--close-x::before{
+      -webkit-transform: rotate(45deg) scaleX(1.25);
+              transform: rotate(45deg) scaleX(1.25);
+    }
+
+.site-header__menu-icon--close-x .site-header__menu-icon__middle{
+      opacity: 0;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    }
+
+.site-header__menu-icon--close-x::after{
+      -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+              transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+
+.site-header__logo{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+@media (min-width: 800px){
+
+.site-header__logo{
+      padding-bottom: 0px;
+      float: left;
+      padding-left: 60px
+  }
+	}
+
+@media (min-width: 1024px){
+
+.site-header__logo{
+      padding-left: 0
+  }
+	}
+
+.site-header__logo__title{
+      margin: 0;
+      padding-top: 20px;
+      color: #fff;
+      font-size: 2.5rem;
+    }
+
+@media (min-width: 800px){
+    .primary-nav--pull-right{
+      float: right;
+    }
+	}
+
+.primary-nav ul{
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav li{
+    list-style-type: none;
+    float: none;
+    padding-right: 20px;
+    padding: 20px;
+    border-bottom: 5px solid #1E1E1E;
+  }
+
+.primary-nav li:first-child{
+      border-top: 5px solid #1E1E1E;
+    }
+
+.primary-nav li:hover{
+      rule: properties;
+    }
+
+.primary-nav li:hover, .primary-nav li.hover_effect{
+      border-bottom: 5px solid #58C93A;
+    }
+
+.primary-nav li:hover a,.primary-nav li.hover_effect a{
+        color: #58C93A;
+      }
+
+@media (min-width: 800px){
+    .primary-nav li{
+      list-style-type: none;
+      float: left;
+      border-right: 1px solid #1D1D1D;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding: 35px;
+      border-bottom: 5px solid #1E1E1E;
+    }
+
+      .primary-nav li:first-child{
+        border-left: 1px solid #1D1D1D;
+        border-top: 0;
+      }
+
+      .primary-nav li:hover{
+        border-bottom: 5px solid #58C93A;
+        cursor: pointer;
+      }
+        .primary-nav li:hover a{
+          color: #58C93A;
+        }
+	}
+
+.primary-nav a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }

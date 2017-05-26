@@ -2,19 +2,62 @@
   text-align: center;
 
   &__facebook:hover{
-    background-color: #516FAD;
+    rule: properties;
+
+    &:hover, &.hover_effect{
+      background-color: #516FAD;
+    }
   }
 
   &__twitter:hover{
-    background-color: #55acee;
+    rule: properties;
+
+    &:hover, &.hover_effect{
+      background-color: #55acee;
+    }
   }
 
   &__instagram:hover{
-    background-color: #e95950;
+    rule: properties;
+
+    &:hover, &.hover_effect{
+      background-color: #e95950;
+    }
+  }
+
+  &__instagram:hover{
+    rule: properties;
+
+    &:hover, &.hover_effect{
+      background-color: #e95950;
+    }
   }
 
   &__youtube:hover{
-    background-color: #bb0000;
+    rule: properties;
+
+    &:hover, &.hover_effect{
+      background-color: #bb0000;
+    }
+  }
+  
+
+  @mixin atMedium{
+    &__facebook:hover{
+      background-color: #516FAD;
+    }
+
+    &__twitter:hover{
+      background-color: #55acee;
+    }
+
+    &__instagram:hover{
+      background-color: #e95950;
+    }
+
+    &__youtube:hover{
+      background-color: #bb0000;
+    }
   }
 
   &__icon{

@@ -1,9 +1,11 @@
 .row{
 
-	@mixin atMedium{
-		@mixin clearfix;
 
-		&--gutters > div{
+	@mixin clearfix;
+
+		
+	@mixin atMedium{
+	&--gutters > div{
 			padding-right: 80px;
 		}
 

@@ -12,6 +12,7 @@
     font-weight: bold;
     color: $darkGray;
     float: left;
+    text-decoration: none;
 
     @mixin atSmall{
       font-size: 1.125rem;
@@ -22,6 +23,7 @@
     font-weight: bold;
     color: $darkGray;
     float: right;
+    text-decoration: none;
 
     @mixin atSmall{
       font-size: 1.125rem;

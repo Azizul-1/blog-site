@@ -3,6 +3,14 @@
 	margin-right: auto;
 	margin-left: auto;
 
+  &--top-border{
+    @mixin atMedium{
+      border-top: 5px solid $headerBorderBottomColor;
+      margin-top: -5px;
+    }
+    
+  }
+
 	&__border{
 		@mixin atSmall{
 			border-left: 1px solid $borderColor;
