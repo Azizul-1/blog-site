@@ -9,6 +9,7 @@
 	<title>Blogin</title>
 
 	<link rel="stylesheet" href="temp/styles/styles.css">
+	<script src="/temp/scripts/Vendor.js"></script>
 </head>
 <body>
 	<header class="site-header">
@@ -54,7 +55,7 @@
 						<picture>
 							<source srcset="assets/images/blog-templet2--large.jpg" media="(min-width: 1024px)">
 							<source srcset="assets/images/blog-templet2--small.jpg" media="(min-width: 800px)">
-							<img src="assets/images/blog-templet2--smaller.jpg" style="width: 100%;" alt="Lorem ipsum">
+							<img class="lazyload" data-srcset="assets/images/blog-templet2--smaller.jpg" style="width: 100%;" alt="Lorem ipsum">
 						</picture>
 						<article class="article-wrapper">
 							<h2 class="article-wrapper__title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
