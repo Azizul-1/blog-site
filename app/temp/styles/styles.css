@@ -747,31 +747,31 @@ img{
 /*Do not edit modules/_sprite directly as it is generated automatically by Gulp.Instead edit gulp/templates/sprite*/
 
 .icon{
-    background-image: url("../../assets/images/sprites/sprite-1ed102c1.svg");
+    background-image: url("../../assets/images/sprites/sprite-a5d7ef3e.svg");
   }
 
 .icon--facebook{
-    width: 23.23px;
-    height: 44.01px;
-    background-position: 54.44973169990888% 0;
+    width: 25.23px;
+    height: 46.01px;
+    background-position: 54.276539846258636% 0;
   }
 
 .icon--instagram{
-    width: 44.01px;
-    height: 44.01px;
-    background-position: 98.74342864469804% 0;
+    width: 46.01px;
+    height: 46.01px;
+    background-position: 98.80473228442493% 0;
   }
 
 .icon--twitter{
-    width: 53.78px;
-    height: 44.06px;
+    width: 55.78px;
+    height: 46.06px;
     background-position: 0 0;
   }
 
 .icon--youtube{
-    width: 36.75px;
-    height: 44px;
-    background-position: 0 97.91111111111111%;
+    width: 38.75px;
+    height: 46px;
+    background-position: 0 98%;
   }
 
 .social-icons{
